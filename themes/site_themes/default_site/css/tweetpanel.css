@@ -1,0 +1,147 @@
+/*body, html {
+	font-family: "Georgia", "Helvetica";
+	font-size: 12px;
+}*/
+
+/*#tweetpanel h3 {
+	margin: 10px 0;
+	font-size: 90%;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}*/
+
+
+#tweetpanel h3 a:link, a:visited{
+    color: #df4800;
+    text-decoration:none;
+}
+#tweetpanel h3 a:hover{
+    color: #8c7c09;
+    text-decoration:underline;
+}
+
+
+a, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*#tweetpanel {
+	margin: 20px auto;
+	width: 300px;
+	overflow: hidden;
+	float:left;
+}*/
+
+.float-left {
+	float: left;
+}
+
+.flush {
+	clear: both;
+}
+
+.box-shadow {
+	-o-box-shadow: 1px 1px 5px #000;
+	-moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+}
+
+.border-bottom {
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#links {
+	position: relative;
+	top: 10px;
+}
+.download {
+	padding: 10px 20px;
+	background: #000;
+}
+.download:hover {
+	color: #000;
+	background: #6ab32e;
+}
+
+#tweetpanel .widget {
+	position: relative;
+	margin: 10px 10px 10px 10px;
+	/*width: auto;*/
+}
+
+#tweetpanel .widget h3 .twitter-icon {
+	position: absolute;
+	top: -30px;
+	left: 180px;
+}
+
+#tweetpanel.tweets {
+	padding: 10px;
+}
+
+#tweetpanel.tweets li {
+	padding: 5px;
+	line-height: 1.2em;
+	text-align: left;
+	display: inline;
+}
+/*===============================================
+TWITTER WIDGET #1
+===============================================*/
+#twitter_update_list {
+	background: #ddd;
+	z-index: 1;
+	font-family:georgia, sans-serif;
+	font-size: 14px;
+	margin-left: -10px;
+	display: inline;
+}
+
+#twitter_update_list li {
+	border-bottom: 1px dashed #555;
+	color: #6ab32e;
+        list-style: none;
+	/*width:auto;*/
+	display: inline;
+}
+
+#twitter_update_list li span {
+	color: #2d3134;
+}
+
+#twitter_update_list li a {
+	color: #6ab32e;
+	display: inline;
+}
+
+#twitter_update_list li a:hover {
+	text-decoration: underline;
+}
+
+#twitter_update_list li .hashtag {
+	color: #6ab32e;
+	display: inline;
+}
+
+#twitter .button {
+	position: relative;
+	top: 10px;
+	margin-left: 145px;
+	padding: 5px 5px;
+	width: 50px;
+	height: 40px;
+	background: #000;
+	font-size: smaller;
+	z-index: 0;
+}
+
+#twitter .button:hover {
+	color: #000;
+	background: #6ab32e;
+}

@@ -1,0 +1,111 @@
+@charset "windows-1252";
+		
+
+
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+  outline: 0; /*fix for FF3.6 in win 7*/
+}
+
+body {
+	/*padding:50px 80px;*/
+	/*font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",sans-serif,verdana;*/
+}
+
+.panel {
+/*   width: 590px;*/
+   width: 450px;
+} 
+
+
+
+
+/*accordion used as class */
+
+	/* root element for each accordion  */
+	
+	
+.accordion {
+	
+		/* some decorations for the accordion root element */
+		background:#e6eae1;
+		width: 450px;
+		border:1px solid #808000;
+		/* IE6 cannot handle PNG24 backgrounds. use a solid color instead */
+		-background:#e6eae1;
+		display:block;
+	      	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	/* accordion header */
+.accordion h3 {
+		background:#ccc;
+		width: auto;
+		padding:5px 5px;
+		font-size:24px;
+		font-weight:normal;
+		border:1px solid #fff;
+		border-bottom:1px solid #ddd;
+		cursor:pointer;
+	  	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	/* currently active header */
+.accordion h3.current {
+		cursor:default;
+		background-color:#FF00CC;color: #fff;
+	}
+	
+.accordion h3:hover {
+		cursor:default;
+		background-color:#FF00CC;color: #fff;
+	}
+	
+	/* accordion pane */
+.accordion div.pane {
+		/*border:1px solid #fff;*/
+		/*border-width:0 2px;*/
+		display:none;
+		height:auto;
+		padding:10px;
+		color:#5c5e42;
+		font-size:18px;
+		max-width: 450px;
+		margin: 0 auto;
+	}
+	
+	/* a title inside pane */
+.accordion div.pane h4 {
+		font-weight:normal;
+		margin:0 0 -5px 0;
+		font-size:16px;
+		color:#999;
+	}
+	
+.accordion div.pane ol{
+    /*float:right;*/
+    color: #492214;
+    list-style:none;
+    /*clear: both;*/
+    /*width: 545px;*/
+    width: auto;
+    /*margin-top: -10px;*/
+    /*border: 1px solid black;*/
+}
+
+
+h: 545px;*/
+    width: auto;
+    /*margin-top: -10px;*/
+    /*border: 1px solid black;*/
+}
+
+

@@ -1,0 +1,96 @@
+ <div class="section white" id="section2"><!--#section2-->
+ 
+     <div class="section_wrap"><!--.section_wrap centers and max width-->
+	    
+            <h2>penworks.net : the about part</h2>
+            <p>‘A mix of life experience, sass, charm and annoying brutal truth’</p>
+	    
+            <ul class="nav navwords">
+<!--                <li><a href="#section1">1</a></li>
+                <li>2</li>
+                <li><a href="#section3">3</a></li>
+		<li><a href="#section4">4</a></li>-->
+	        <li><a href="#section1">hello</a></li>
+                <li>about</li>
+                <li><a href="#section3">interesting</a></li>
+		<li><a href="#section4">archive</a></li>
+            </ul>
+	    
+	    
+	   <div class="about">
+		      
+	   <p>"A determination to do what's right"</p>
+	
+	    
+	    
+	   <div class="accordion"> <!-- .accordion -->
+		      
+		      <h3>Stuff I know</h3> 
+		    
+		      <div class="pane" > <!-- .pane 1 -->
+			   
+		      <ol>
+				 <li>the digital world: A fair bit of it, in some detail. I 'do', and 'teach'.</li>
+				 <li>the real world: <strike>a lot.</strike> Nothing.</li>
+				 <li> the future world: maybe a little, if I'm lucky.</li>
+				 <li>stuff I want to do next: help change the system, especially HE, make it real, meaningful, actually worth the money it's going to cost.</li>
+				 <li>stuff to signify some of the above: MSc, PGCert</li>
+		      </ol>
+		      </div> <!-- /.pane 1 -->
+		   
+		      <h3>Previous Stuff I did</h3> 
+		   
+		      <div class="pane"> <!-- .pane 2-->
+		   
+		     Songwriter/musician/researcher/interviewer/sculptors assistant/music youth worker/music merchandise sales exec/not in that order
+		      </div> <!-- /.pane 2 -->
+	    
+		      <h3>Some video</h3> 
+		   
+		      <div class="pane"> <!-- .pane 3 -->
+		      <iframe src="http://player.vimeo.com/video/29144219?title=0&amp;byline=0&amp;portrait=0" width="276" height="155" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen style="float:right; padding: 3px; border: 1px solid #ccc;margin-top: -5px;"></iframe>
+		      <ol><li>This video was a trailer for SocialMet, it's got me in it. We had to make several clips, both to promote the initiative, and to create a buzz of what students would say to us. All the other clips are available on the <a href="http://www.vimeo.com/socialmet" target="_blank">Vimeo SocialMet page</a>.</li></ol>
+	          </div><!-- /.pane 3 -->
+
+		      <h3>The Skills</h3> 
+		   
+		      <div class="pane"> <!-- .pane 4 -->
+		      <ol><li>(X)HTML/CSS/Video iMovie/Premiere/(web)/Audio Ableton/Reason/Audacity/(web)/RSS/PS, Ill, Flash/Social Media/CMS (Drupal, Expression Engine, Wordpress, other Open Source like Nano, Flatpress, QuickCMS)/ Academic stuff/Current tech online/project management & tech app planning [...]</li></ol>
+	          </div><!-- /.pane 4 -->
+		      
+	   </div><!--/.accordion-->
+	    
+	    
+	</div><!--/.about-->
+	   
+
+<script>
+	   
+//activate the accordion
+  $(function() {
+    $(".accordion").tabs(
+    ".accordion div.pane",
+    {tabs: 'h3', effect: 'slide', initialIndex: null}
+  );
+    });
+
+// add new effect to the tabs
+$.tools.tabs.addEffect("slide", function(i, done) {
+
+    // 1. upon hiding, the active pane has a grey background color
+    this.getPanes().slideUp().css({backgroundColor: "#c0c0c0"});
+
+    // 2. after a pane is revealed, its background is set to its original color (transparent)
+    this.getPanes().eq(i).slideDown(function()  {
+	$(this).css({backgroundColor: 'transparent'});
+
+	// the supplied callback must be called after the effect has finished its job
+	done.call();
+    });
+});
+</script>
+
+
+	   </div><!--/.section_wrap-->
+
+        </div><!--/#section2-->

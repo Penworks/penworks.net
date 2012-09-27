@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>brandnewbox.co.uk</title>
+		<link>http://brandnewbox.co.uk/</link>
+		<description></description>
+		<dc:language>en</dc:language>
+		<dc:creator>aweaver@brandnewbox.co.uk</dc:creator>
+		<dc:rights>Copyright 2010</dc:rights>
+		<pubDate>Sat, 08 May 2010 16:13:41 GMT</pubDate>
+		<atom:link href="http://brandnewbox.co.uk/v8/rss" rel="self" type="application/rss+xml" />   
+		
+		<item>
+			<title>DataGrab developer licensing</title>
+			<link>http://brandnewbox.co.uk/news/details/datagrab-developer-licensing</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/datagrab-developer-licensing#id:2421#date:15:02</guid>
+						<description><![CDATA[<p>For a trial period, I&#8217;ve introduced a developer license for DataGrab.</p><p>Buying the developer license allows you to install and use the module on an unlimited number of sites.</p>
+
+<ul>
+<li><a href="/products/details/datagrab">DataGrab developer license</a></li>
+</ul>
+
+<p>The license has been introduced for an experimental period. I am hoping it is something that EE developers will find useful - several people have already requested it. The price of the license is also on a trial basis and may change in the future, most likely upwards.</p>
+
+<p>Currently the license is only available on brandnewbox.co.uk, but if it works here I&#8217;ll introduce it on <a href="http://devot-ee.com/add-ons/datagrab">devot-ee</a> too.</p>
+
+<p>On a side point, in recent months DataGrab has been available on this site at a reduced price. This &#8220;sale&#8221; will soon end and prices on this site and devot-ee will be kept approximately inline (exchange rates permitting).</p>
+
+<p>I&#8217;d be <a href="http://brandnewbox.co.uk/v8/contact">interested in any comments</a> you have regarding developer licenses and their pricing.</p>
+
+<p>Andrew</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Fri, 16 Mar 2012 15:02 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab and Matrix fields</title>
+			<link>http://brandnewbox.co.uk/support/details/datagrab_and_matrix_fields</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/datagrab_and_matrix_fields#id:2216#date:12:55</guid>
+						<description><![CDATA[<p>Notes on using DataGrab to import into Matrix fields.</p><p><strong>This is a holding page to add notes regarding importing data into a Matrix field.</strong></p>
+
+<p><em>Preliminary support for <a href="http://pixelandtonic.com/matrix">Pixel &amp; Tonic&#8217;s Matrix</a> is available in DataGrab 1.7.0 and above. Please consider this support as a Beta until further notice.</em></p>
+
+<h3>Version details</h3>
+
+<ul>
+<li>DataGrab version 1.7.1</li>
+<li>Matrix version 2.2.4 <strong>Earlier versions will not work</strong>.</li>
+</ul>
+
+<h3>Configuring the import</h3>
+
+<p><img src="http://brandnewbox.co.uk/images/uploads/datagrab_matrix1.png" alt="Configuring the import" width="479" height="138"  /></p>
+
+<h3>The results</h3>
+
+<p><img src="http://brandnewbox.co.uk/images/uploads/datagrab_matrix2.png" alt="The resulting matrix field" width="531" height="379"  /></p>
+
+<h3>Matrix cell types</h3>
+
+<p>The beta version currently supports <strong>text</strong>, <strong>date</strong> and <strong>file</strong> cells. Support for other cell types to follow.</p>
+
+<p><strong>Date fields</strong> can be formatted in any recognisable date format (YYYY-MM-DD HH:MM:SS is recommended)</p>
+
+<p><strong>Images/files</strong> should be uploaded manually to an existing <a href="http://expressionengine.com/index.php?affiliate=brandnewbox&amp;page=/user_guide/cp/content/files/file_upload_preferences.html#file-upload-preferences">File Upload area</a> and the filename in the data source should be prefixed with the Upload area variable (e.g., &#123;filedir_1}filename.png if filename.png is in the upload area with the id of 1)</p>
+
+<h3>Supported data types</h3>
+
+<p>CSV and XML imports are supported. I&#8217;ll document these better as the beta progresses. Feel free to contact me in the meantime if you need help.</p>
+
+<p>Example data format are:</p>
+
+<h4>XML</h4>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #007700">&lt;</span><span style="color: #0000BB">products</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">product</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">PRODUCT4</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">sku</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">D</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">sku</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">description</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet</span><span style="color: #007700">...&lt;/</span><span style="color: #0000BB">description</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">items</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">sku</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">D1</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">sku</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">label</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">TwoA</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">label</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">image</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;filedir_1&#125;bnb5</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">image</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">rel</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">rel</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">2012</span><span style="color: #007700">-</span><span style="color: #0000BB">03</span><span style="color: #007700">-</span><span style="color: #0000BB">01</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">sku</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">D2</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">sku</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">label</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">TwoB</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">label</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">image</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;filedir_1&#125;bnb1</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">image</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">rel</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">rel</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">2012</span><span style="color: #007700">-</span><span style="color: #0000BB">03</span><span style="color: #007700">-</span><span style="color: #0000BB">01</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">items</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">product</span><span style="color: #007700">&gt;<br />&lt;/</span><span style="color: #0000BB">products</span><span style="color: #007700">&gt;&nbsp;</span>
+</span>
+</code></div>
+
+<p>ie, repeating item elements can be imported into a Matrix. Select the first item in the configuration pulldown, and DataGrab will add the rest</p>
+
+<h4>CSV with Matrix rows on separate lines of the file</h4>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #0000BB">ID1</span><span style="color: #007700">,</span><span style="color: #DD0000">"PRODUCT1"</span><span style="color: #007700">,</span><span style="color: #DD0000">"Blah,&nbsp;blah,&nbsp;blah."</span><span style="color: #007700">,</span><span style="color: #0000BB">A1</span><span style="color: #007700">,</span><span style="color: #DD0000">"OneA"</span><span style="color: #007700">,</span><span style="color: #DD0000">"&#123;filedir_1&#125;bnb1.png"</span><span style="color: #007700">,</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #DD0000">"2011-12-11"</span><span style="color: #007700">,</span><span style="color: #0000BB">12.99<br />ID1</span><span style="color: #007700">,</span><span style="color: #DD0000">"PRODUCT1"</span><span style="color: #007700">,</span><span style="color: #DD0000">"Blah,&nbsp;blah,&nbsp;blah."</span><span style="color: #007700">,</span><span style="color: #0000BB">A2</span><span style="color: #007700">,</span><span style="color: #DD0000">"OneB"</span><span style="color: #007700">,</span><span style="color: #DD0000">"&#123;filedir_1&#125;bnb2.png"</span><span style="color: #007700">,</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #DD0000">"2011-12-11"</span><span style="color: #007700">,</span><span style="color: #0000BB">13.99<br />ID1</span><span style="color: #007700">,</span><span style="color: #DD0000">"PRODUCT1"</span><span style="color: #007700">,</span><span style="color: #DD0000">"Blah,&nbsp;blah,&nbsp;blah."</span><span style="color: #007700">,</span><span style="color: #0000BB">A3</span><span style="color: #007700">,</span><span style="color: #DD0000">"OneC"</span><span style="color: #007700">,</span><span style="color: #DD0000">"&#123;filedir_1&#125;bnb4.png"</span><span style="color: #007700">,</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #DD0000">"2011-12-11"</span><span style="color: #007700">,</span><span style="color: #0000BB">14.99&nbsp;</span>
+</span>
+</code></div>
+
+<p>In the settings assign a unique id (eg, product id) to a custom field. Use that field to check for duplicates and check the Update existing entries setting.</p>
+
+<h4>CSV with matrix rows as comma delimited values in a cell</h4>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #0000BB">E</span><span style="color: #007700">;</span><span style="color: #DD0000">"PRODUCT5"</span><span style="color: #007700">;</span><span style="color: #DD0000">"Blah,&nbsp;blah,&nbsp;blah."</span><span style="color: #007700">;</span><span style="color: #DD0000">"E1,E2"</span><span style="color: #007700">;</span><span style="color: #DD0000">"ThreeA,ThreeB"</span><span style="color: #007700">;</span><span style="color: #DD0000">"&#123;filedir_1&#125;bnb3.png,&#123;filedir_1&#125;bnb2.png"</span><span style="color: #007700">;</span><span style="color: #DD0000">"2011-11-04,2010-11-16"&nbsp;</span>
+</span>
+</code></div>
+
+<p>Note, that the 4th to 7th columns each have 2 comma-separated values. Each value will be assigned to a new matrix row.</p>
+
+<h3>Known problems</h3>
+
+<p>Please consider this Beta level software. Features may not work and may change in future releases.</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Thu, 01 Mar 2012 12:55 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Increasing PHP memory limits</title>
+			<link>http://brandnewbox.co.uk/support/details/increasing_php_memory_limits</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/increasing_php_memory_limits#id:2241#date:10:17</guid>
+						<description><![CDATA[<p>Finding and increasing your PHP memory limits for large imports.</p><h3>How to find the current memory limit</h3>
+
+<p>You can find the current PHP memory limit from the ExpressionEngine 2 Control Panel</p>
+
+<p>Go to: Tools > Utilities > PHP Info</p>
+
+<p>￼<img src="http://brandnewbox.co.uk/images/uploads/phpinfo.png" alt="phpinfo" width="337" height="175"  /></p>
+
+<p>and search for the line &#8220;memory_limit&#8221;</p>
+
+<p>￼<img src="http://brandnewbox.co.uk/images/uploads/memory_limit.png" alt="Memory limit" width="587" height="33"  /></p>
+
+<p>the first value (in the &#8220;Local&#8221; column) will tell you the current memory limit</p>
+
+<h3>Increasing the memory limit</h3>
+
+<p>Depending on your web hosting, you may be able to increase your memory limits. Some hosts will not allow this, or will limit the maximum amount of memory you can set. I&#8217;ve found some hosts are willing to set quite high limits if you explain it will be for a one-off data import and that it can be lowered again afterwards.</p>
+
+<p>Your web hosting service will be able to tell you the appropriate way to increase you memory limit, but here is a summary of the options.</p>
+
+<h4>.htaccess</h4>
+
+<p>This is my preferred method as it makes it easy to set values of a site-by-site basis, but will not work under all hosting configurations. In a .htaccess file in the root of your website, add the line:</p>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #0000BB">php_value&nbsp;memory_limit&nbsp;128M&nbsp;</span>
+</span>
+</code></div>
+
+<p>This will give you a memory limit of 128M. </p>
+
+<h4>php.ini</h4>
+
+<p>If you are able to edit the server&#8217;s php.ini file you can modify the the memory limit there. Look for the line:</p>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #0000BB">memory_limit&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">64M&nbsp;</span>
+</span>
+</code></div>
+
+<p>and adjust the value accordingly. This will apply to all sites.</p>
+
+<p>You may also be able to create/modify a php.ini in the website&#8217;s root folder.</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Tue, 06 Dec 2011 10:17 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Matrix support added to DataGrab 1.7.0</title>
+			<link>http://brandnewbox.co.uk/news/details/matrix_support_added_to_datagrab_1.7.0</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/matrix_support_added_to_datagrab_1.7.0#id:2240#date:12:10</guid>
+						<description><![CDATA[<p><a href="http://brandnewbox.co.uk/products/details/datagrab">DataGrab</a> 1.7.0 has been released. </p>
+
+<p>This version has made a number of changes to the underlying code to make future development easier.</p>
+
+<p>New features include:</p>
+
+<ul>
+<li><em>Preliminary</em> <a href="http://brandnewbox.co.uk/support/details/datagrab_and_matrix_fields">support for Matrix</a> fields</li>
+<li>Multiple category group support</li>
+<li>Improved compatibility with other field types (e.g., Playa, multi select checkboxes, files)</li>
+<li>Authors can be assigned from custom member fields</li>
+<li>Added basic inline help. First stages of documentation improvements</li>
+<li>Fixed numerous bugs</li>
+</ul>
+
+<p>The latest version can be download from the <a href="http://brandnewbox.co.uk/products/downloads/">Downloads</a> section.</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Mon, 05 Dec 2011 12:10 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab Configuration Options</title>
+			<link>http://brandnewbox.co.uk/support/details/datagrab_configuration_options</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/datagrab_configuration_options#id:2191#date:13:23</guid>
+						<description><![CDATA[<p>A quick guide to DataGrab&#8217;s configuration options.</p><p><img src="http://brandnewbox.co.uk/images/uploads/settings560.png" alt="DataGrab settings" width="555" height="206"  /></p>
+
+<h3 id="urltitle">Url Title</h3>
+
+<p>DataGrab&#8217;s default behaviour is to generate an entry&#8217;s url title from the
+entry&#8217;s Title field (as it would if you were publishing an entry manually).
+If you need the entry to have a specific url title then you can specify
+which field of the data source to use.</p>
+
+<p>Note, that URL Titles cannot be made entirely from numbers. If your titles are
+numeric, then you can use the Publish Page Customization options under the
+Channel Preferences to add a <a href="http://expressionengine.com/user_guide/cp/admin/channels/channel_edit_preferences.html#url-title-prefix">URL Title Prefix</a>.</p>
+
+<h3 id="date">Date</h3>
+
+<p>DataGrab will attempt to read your date in whatever format you provide. For
+best results use YYYY-MM-DD hh:mm:ss. Try to avoid &#8216;ambiguous&#8217; formats, such
+as DD/MM/YY or MM/DD/YY.</p>
+
+<h3 id="duplicateentries">Duplicate Entries</h3>
+
+<p>DataGrab can check whether entries already exists and if they do it can skip
+or attempt to update the existing entry.</p>
+
+<p>To check for an existing or duplicate entry, DataGrab will test whether the
+potential new entry has a field value that matches an existing entry. </p>
+
+<p>For example, an RSS feed often has a <code>guid</code> field that uniquely identifies a
+feed element, or a store product usually has a stock id number.</p>
+
+<p>If you save this value into a custom field, you can then, on subsequent imports,
+check this field for an existing entry and update it or ignore it as appropriate.</p>
+
+<p>You can use the <strong>Use this field to check for duplicates</strong> setting to select which
+field to check. If you leave this field blank it will always add a new entry.</p>
+
+<p>if you check the <strong>Update existing entries</strong> option then DataGrab will attempt
+to update the entry&#8217;s values from the new record. Otherwise, it will ignore it
+(ie, not update it, but not add a new entry).</p>
+
+<h3 id="addatimestamptothisfield">Add a timestamp to this field</h3>
+
+<p>DataGrab can add a timestamp to a field that it adds or updates. This can help
+in tracking which entries have been updated or deleting old entries.</p>
+
+<h3 id="deleteoldentries">Delete old entries</h3>
+
+<p>If you check this, DataGrab will delete any entries in the channel that have
+not been added or updated by this import. This can be useful for maintaining
+an up-to-date product list, for example, but must be used with care.</p>
+
+<h3 id="defaultauthor">Default Author</h3>
+
+<p>This allows you to set the author of any new entries.</p>
+
+<h3 id="author">Author</h3>
+
+<p>You can also assign the author from a field in the data source. The <strong>Author
+Field Value</strong> tells the system what format the author is stored as (eg, email
+address, username) and <strong>Author</strong> specifies which data field it is in.</p>
+
+<h3 id="status">Status</h3>
+
+<p>The Status field allows you to specify a data source field to set the entry&#8217;s
+status or you can use Open, Closed or the <a href="http://expressionengine.com/user_guide/cp/admin/channels/channel_edit_preferences.html#administrative-preferences">channel&#8217;s default</a>.</p>
+
+<h3 id="offset">Offset</h3>
+
+<p>Sometimes you need to adjust the time to take into account localization. The
+offset option allows you to add or subtract any number of seconds from the
+date/time values.</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			<category>Reference</category>
+			
+			<pubDate>Sat, 05 Nov 2011 13:23 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab 1.6.1 released</title>
+			<link>http://brandnewbox.co.uk/news/details/datagrab_1.6.1_released</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/datagrab_1.6.1_released#id:2147#date:10:12</guid>
+						<description><![CDATA[<p>DataGrab 1.6.1 has been released. This is largely a bug-fix release with some minor functionality additions such as the ability to configure url titles and expiry dates.</p>
+
+<p>The next stage of development will be some underlying code changes to help support the import of 3rd party field types (such as Matrix). I&#8217;m going to try and maintain an informal <a href="http://brandnewbox.co.uk/forums/viewannounce/431_16/" title="DataGrab road map">road-map here</a> to give some idea of the current priorities.</p>
+
+<p>The latest version can be download from the <a href="http://brandnewbox.co.uk/products/downloads/">Downloads</a> section.</p>
+
+]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Tue, 25 Oct 2011 10:12 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab progress update and future Matrix support</title>
+			<link>http://brandnewbox.co.uk/news/details/datagrab_progress_update_and_future_matrix_support</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/datagrab_progress_update_and_future_matrix_support#id:2088#date:11:30</guid>
+						<description><![CDATA[<p>I am hoping to release the next version of <a href="http://brandnewbox.co.uk/products/details/datagrab">DataGrab</a> in the next few days. The current development version has many new features fully or partially implemented, and I will be tidying these up and fixing a few bugs before hopefully releasing by the end of the week.</p>
+
+<p>Some of the new features include:</p>
+
+<ul>
+<li>Support for <a href="http://www.solspace.com/software/detail/tag">Solspace Tags</a> and <a href="http://devot-ee.com/add-ons/seolite">SEO Lite add-ons</a></li>
+<li>Ability to set url title and expiry date from data</li>
+<li>Bug fixes and minor optimisations</li>
+</ul>
+
+<h3 id="matrixsupport">Matrix support</h3>
+
+<p>Once this version is released I will be concentrating on adding <a href="http://pixelandtonic.com/matrix">Matrix</a> support. </p>
+
+<p>Just as Matrix provides huge flexibility in how you build your site, it makes the
+configuration of the import difficult - it becomes effectively an import-within-an-import. Coupled with DataGrab&#8217;s ability to handle different data types (CSV, XML etc) it makes mapping values from the data source to Matrix fields a challenge.</p>
+
+<p>I have a version of DataGrab that successfully imports into a Matrix field, but the data needs to be formatted quite specifically. To get the development process to the next stage I need real-world examples of what you need to do. </p>
+
+<p>If adding Matrix support to DataGrab would be useful for you, please could you  or add a post in the <a href="http://brandnewbox.co.uk/forums/viewthread/422/">support forum</a> with examples of data sources (eg, CSV, XML files or others) and matrix designs (screenshots would be great) and how you&#8217;d like the data to map to the Matrix fields. </p>
+
+<p>This will give me a much better understanding of what the Matrix import process needs to achieve.</p>
+
+<p>There is an <a href="http://brandnewbox.co.uk/forums/viewthread/422/">example of what would be helpful here:</a></p>
+
+<h3 id="documentation">Documentation</h3>
+
+<p>While developing the next stage I also want to improve the <a href="http://brandnewbox.co.uk/support/category/datagrab">module&#8217;s documentation</a>. Any feedback would be much appreciated.</p>
+
+<p>Many thanks, Andrew</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Tue, 04 Oct 2011 11:30 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Assigning authors to entries with DataGrab</title>
+			<link>http://brandnewbox.co.uk/support/details/assigning_authors_to_entries_with_datagrab</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/assigning_authors_to_entries_with_datagrab#id:2042#date:14:54</guid>
+						<description><![CDATA[<p>How to assign authors to entries with a DataGrab import</p><div class="frame">
+<p><a href="/images/datagrab_authors.png" rel="lightbox"><img src="/images/datagrab_authors_th.jpg" width="540" height="120" alt="Assign authors with DataGrab" /></a></p>
+</div>
+
+<p>DataGrab won&#8217;t create members for you - it cannot guarantee having all the information it will need - but it will let you dynamically assign authors based on a field in the data source.</p>
+
+<p>In the &#8220;Other settings&#8221; section of the configuration you can set the following options:</p>
+
+<dl>
+
+<dt>Default Author</dt>
+<dd>This will allow you set the default author that entries will be assigned to.</dd>
+
+<dt>Author</dt>
+<dd>This will give you a pull-down list of the available fields in your data source. If you choose an option here, the module will attempt to find a member that matches this field and assign the entry to it.</dd>
+
+<dt>Author Field Value</dt>
+<dd>DataGrab can look in the following fields to see if the Author matches an existing member: member id, screen name, username, email address</dd>
+
+</dl>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Tue, 13 Sep 2011 14:54 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Example XML formats</title>
+			<link>http://brandnewbox.co.uk/support/details/example_xml_formats</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/example_xml_formats#id:2027#date:20:39</guid>
+						<description><![CDATA[<p>DataGrab can handle most XML formats. Here&#8217;s some examples.</p><h3>An XML file</h3>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #007700">&lt;</span><span style="color: #0000BB">root</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">entry</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">id</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">A</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">id</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Dummy&nbsp;1</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">1973</span><span style="color: #007700">-</span><span style="color: #0000BB">12</span><span style="color: #007700">-</span><span style="color: #0000BB">11&nbsp;13</span><span style="color: #007700">:</span><span style="color: #0000BB">00</span><span style="color: #007700">:</span><span style="color: #0000BB">00</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">summary</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Adds&nbsp;a&nbsp;related&nbsp;field</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">summary</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">entry</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">entry</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">id</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">B</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">id</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Dummy&nbsp;2</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">1973</span><span style="color: #007700">-</span><span style="color: #0000BB">11</span><span style="color: #007700">-</span><span style="color: #0000BB">04&nbsp;23</span><span style="color: #007700">:</span><span style="color: #0000BB">59</span><span style="color: #007700">:</span><span style="color: #0000BB">00</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">date</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">summary</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Adds&nbsp;another&nbsp;related&nbsp;field</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">summary</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">entry</span><span style="color: #007700">&gt;<br />&lt;/</span><span style="color: #0000BB">root</span><span style="color: #007700">&gt;&nbsp;</span>
+</span>
+</code></div>
+
+<p>For this example, the path will be</p><div class="codeblock"><code><span style="color: #000000">
+<span style="color: #007700">/</span><span style="color: #0000BB">root</span><span style="color: #007700">/</span><span style="color: #0000BB">entry&nbsp;</span>
+</span>
+</code></div>
+
+<h3>An RSS feed</h3>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?xml&nbsp;version</span><span style="color: #007700">=</span><span style="color: #DD0000">"1.0"</span><span style="color: #0000BB">?&gt;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">rss&nbsp;version</span><span style="color: #007700">=</span><span style="color: #DD0000">"0.91"</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">channel</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Channel</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">link</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">http</span><span style="color: #007700">:</span><span style="color: #FF8000">//test.com/&lt;/link&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">description</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Description</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">description</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Item&nbsp;</span><span style="color: #FF8000">#1&lt;/title&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">description</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Description&nbsp;</span><span style="color: #FF8000">#1&lt;/description&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">link</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">http</span><span style="color: #007700">:</span><span style="color: #FF8000">//test.com/1&lt;/link&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">guid</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">1</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">guid</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Item&nbsp;</span><span style="color: #FF8000">#2&lt;/title&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">description</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Description&nbsp;</span><span style="color: #FF8000">#2&lt;/description&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">link</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">http</span><span style="color: #007700">:</span><span style="color: #FF8000">//test.com/2&lt;/link&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">guid</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">2</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">guid</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">item</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">channel</span><span style="color: #007700">&gt;<br />&lt;/</span><span style="color: #0000BB">rss</span><span style="color: #007700">&gt;&nbsp;</span>
+</span>
+</code></div>
+
+<p>The path for this file would be</p><div class="codeblock"><code><span style="color: #000000">
+<span style="color: #007700">/</span><span style="color: #0000BB">rss</span><span style="color: #007700">/</span><span style="color: #0000BB">channel</span><span style="color: #007700">/</span><span style="color: #0000BB">item&nbsp;</span>
+</span>
+</code></div><p>.</p>
+
+]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Mon, 12 Sep 2011 20:39 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>brandnewbox sponsoring EEUK 2011</title>
+			<link>http://brandnewbox.co.uk/news/details/brandnewbox_eeuk</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/brandnewbox_eeuk#id:1988#date:12:59</guid>
+						<description><![CDATA[<p>We&#8217;re pleased to be able to sponsor the first <a href="http://eeuk.org/">EEUK conference</a> in Manchester on the 26th August.</p><p>There&#8217;s a fantastic line-up of speakers to enjoy (Carl Crawley, Joel Bradbury, John Henry Donovan, Leslie Flinger, Stephen Lewis, Lodewijk Schutte, and Garrett Winder) and a great looking <a href="http://instagr.am/p/JTfmA/" title=""Manchester Town Hall">venue</a>. </p>
+
+<p>The conference is being organised by Ian Ebden of <a href="http://www.designkarma.co.uk/">DesignKarma</a> and tickets are on sale until Friday 19th August.</p>
+
+<p>You can follow the latest news using the twitter hashtag <a href="http://twitter.com/#!/search/eeuk11">#eeuk11</a>.</p>
+
+<p>Hope to see you there!</p>
+
+]]></description>
+						<category>Events</category>
+			
+			<pubDate>Tue, 16 Aug 2011 12:59 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Importing into Playa fields with DataGrab</title>
+			<link>http://brandnewbox.co.uk/support/details/importing_into_playa_fields_with_datagrab</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/importing_into_playa_fields_with_datagrab#id:1904#date:10:13</guid>
+						<description><![CDATA[<p>This is a quick tutorial on how to import into Playa fields using DataGrab (v1.6+)</p><h3>The first import</h3>
+
+<div class="step-image"><a href="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343321599_lg.png" class="image" rel="lightbox"><img src="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343321599.png" width="550" height="325" alt="" /></a></div>
+
+<p>Firstly, we&#8217;ll import our initial set of data into the News channel. Here we are using a CSV file called <a href="/images/Importing_into_Playa_fields_with_DataGrab/dummy.csv">dummy.csv</a>.</p>
+
+<h3>Configure the import</h3>
+
+<div class="step-image"><a href="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343355754_lg.png" class="image" rel="lightbox"><img src="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343355754.png" width="550" height="294" alt="" /></a></div>
+
+<p>We&#8217;ll just fo a simple import, setting the Title, Entry Date and Body fields of the entry</p>
+
+<h3>Results of the first import</h3>
+
+<div class="step-image"><a href="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343386511_lg.png" class="image" rel="lightbox"><img src="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343386511.png" width="550" height="275" alt="" /></a></div>
+
+<p>We now have 3 new entries in the News channel.</p>
+
+<h3>The second import</h3>
+
+<div class="step-image"><a href="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343523663_lg.png" class="image" rel="lightbox"><img src="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343523663.png" width="550" height="271" alt="" /></a></div>
+
+<p>In this import we&#8217;ll use an XML file called <a href="/images/Importing_into_Playa_fields_with_DataGrab/dummy.xml">dummy.xml</a>.&nbsp; We want to relate these entries to the entries we have just imported (using the Playa field), so the entries in this file all have a field that contains the titles of the entries that they should be related too (eg, Two)</p>
+
+<h3>Configure the second import</h3>
+
+<div class="step-image"><a href="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343504258_lg.png" class="image" rel="lightbox"><img src="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343504258.png" width="550" height="270" alt="" /></a></div>
+
+<p>As with the first we have set up a simple import, but with the addition of the Playa field.</p>
+
+<p>In the Playa field we choose which field in the data source describes the relationship. In this case the field &#8216;related/title&#8217; contains the name(s) of the titles from the first import.</p>
+
+<p>Note that you can use another field other than the entry&#8217;s title to match on. You could use the entry&#8217;s id or another custom field if that is a better option (eg, a Product&#8217;s unique identifier)</p>
+
+<h3>The final results</h3>
+
+<div class="step-image"><a href="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343648410_lg.png" class="image" rel="lightbox"><img src="/images/Importing_into_Playa_fields_with_DataGrab/media_1309343648410.png" width="550" height="439" alt="" /></a></div>
+
+<p>When we run the second import it creates new entries and adds any Playa relationships it finds.</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Thu, 07 Jul 2011 10:13 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab featured in online ExpressionEngine courses.</title>
+			<link>http://brandnewbox.co.uk/news/details/datagrab_featured_in_online_expressionengine_courses</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/datagrab_featured_in_online_expressionengine_courses#id:1899#date:08:52</guid>
+						<description><![CDATA[<p><a href="http://www.creat-ee.com/">Creat-ee</a> are currently running some excellent online ExpressionEngine courses including a couple featuring the <a href-"http://brandnewbox.co.uk/products/details/datagrab">DataGrab</a> module.</p><p>Upcoming courses include:</p>
+
+<ul>
+<li><a href="http://www.creat-ee.com/classes/more/ecommerce_on_ee_brilliantretail_datagrab">BrilliantRetail &amp; Datagrab</a></li>
+<li><a href="http://www.creat-ee.com/classes/more/advanced_expressionengine_2.0">Advanced ExpressionEngine 2.0</a></li>
+<li><a href="http://www.creat-ee.com/classes/more/expressionengine_20_for_beginners/">ExpressionEngine 2.0 for Beginners</a></li>
+</ul>
+
+<p>Check out the <a href="http://www.creat-ee.com/testimonials/">testimonials here</a>.</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Thu, 30 Jun 2011 08:52 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Client Downloads for EE2</title>
+			<link>http://brandnewbox.co.uk/news/details/client_downloads_for_ee2</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/client_downloads_for_ee2#id:1898#date:08:41</guid>
+						<description><![CDATA[<p>I&#8217;m looking for a handful of testers for the EE2 release of <a href="http://brandnewbox.co.uk/products/details/client_downloads">Client Downloads</a>. <a href="http://brandnewbox.co.uk/v8/contact">Contact me</a> if you are interested.</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>Client Downloads</category>
+			
+			<pubDate>Thu, 30 Jun 2011 08:41 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Adding icons to a user download area</title>
+			<link>http://brandnewbox.co.uk/support/details/adding_icon_to_a_user_download_area</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/adding_icon_to_a_user_download_area#id:1897#date:12:26</guid>
+						<description><![CDATA[<p>A quick tutorial on how to add icons to assets with Client Downloads.</p><div class="frame">
+<p><a href="/images/client_downloads/frontend.png" rel="lightbox"><img src="/images/client_downloads/frontend_th.png" width="540" height="120" alt="Client Downloads usage" /></a></p>
+</div>
+
+<p>Here is an example template to display a user&#8217;s folders:</p>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #0000BB">&#123;exp</span><span style="color: #007700">:</span><span style="color: #0000BB">ajw_client_downloads</span><span style="color: #007700">:</span><span style="color: #0000BB">folder&nbsp;orderby</span><span style="color: #007700">=</span><span style="color: #DD0000">"id"</span><span style="color: #0000BB">&#125;<br /><br />&#123;if&nbsp;no_results&#125;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">There&nbsp;are&nbsp;no&nbsp;folders&nbsp;</span><span style="color: #007700">for&nbsp;</span><span style="color: #0000BB">this&nbsp;user</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;</span><span style="color: #007700">/</span><span style="color: #0000BB">if&#125;<br /><br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">h3</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;folder_title&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">h3</span><span style="color: #007700">&gt;<br /><br />&lt;</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;folder_description&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;<br /><br />&lt;</span><span style="color: #0000BB">table&nbsp;width</span><span style="color: #007700">=</span><span style="color: #DD0000">"100%"</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">thead</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Id</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Title</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Size</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Date</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Extension</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">thead</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">tbody</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">&#123;if&nbsp;no_assets&#125;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">td&nbsp;colspan</span><span style="color: #007700">=</span><span style="color: #DD0000">"5"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">There&nbsp;are&nbsp;no&nbsp;assets&nbsp;in&nbsp;this&nbsp;folder</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;</span><span style="color: #007700">/</span><span style="color: #0000BB">if&#125;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123;assets&nbsp;orderby</span><span style="color: #007700">=</span><span style="color: #DD0000">"title"</span><span style="color: #0000BB">&#125;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">tr&nbsp;</span><span style="color: #007700">class=</span><span style="color: #DD0000">"&#123;switch="</span><span style="color: #0000BB">one</span><span style="color: #007700">|</span><span style="color: #0000BB">two</span><span style="color: #DD0000">"&#125;"</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;id&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&#123;url&#125;"&nbsp;</span><span style="color: #007700">class=</span><span style="color: #DD0000">"icon&nbsp;icon-&#123;extension&#125;"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;title&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;size&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;date&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&#123;extension&#125;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">&#123;</span><span style="color: #007700">/</span><span style="color: #0000BB">assets&#125;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">tbody</span><span style="color: #007700">&gt;<br />&lt;/</span><span style="color: #0000BB">table</span><span style="color: #007700">&gt;<br /><br /></span><span style="color: #0000BB">&#123;</span><span style="color: #007700">/</span><span style="color: #0000BB">exp</span><span style="color: #007700">:</span><span style="color: #0000BB">ajw_client_downloads</span><span style="color: #007700">:</span><span style="color: #0000BB">folder&#125;&nbsp;</span>
+</span>
+</code></div>
+
+<p>The key part of this is the</p>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #007700">class=</span><span style="color: #DD0000">"icon&nbsp;icon-&#123;extension&#125;"&nbsp;</span>
+</span>
+</code></div>
+
+<p>added to the asset&#8217;s link. This creates a default icon class and then an additional class that varies depending on the asset&#8217;s extension.</p>
+
+<p>We can then, along with a suitable icon library (I&#8217;ve used <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam&#8217;s silk icon set</a>), use the following CSS:</p>
+
+<div class="codeblock"><code><span style="color: #000000">
+<span style="color: #007700">.</span><span style="color: #0000BB">icon&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;padding</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">3px&nbsp;0&nbsp;3px&nbsp;24px</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">background</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">transparent&nbsp;url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">unknown</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">no</span><span style="color: #007700">-</span><span style="color: #0000BB">repeat&nbsp;0&nbsp;3px</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">folder&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">transparent&nbsp;url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">folder</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">no</span><span style="color: #007700">-</span><span style="color: #0000BB">repeat&nbsp;0&nbsp;4px</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">png</span><span style="color: #007700">,<br />.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">jpeg</span><span style="color: #007700">,<br />.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">jpg</span><span style="color: #007700">,<br />.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">gif&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">gif</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">zip&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">zip</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">doc</span><span style="color: #007700">,<br />.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">docx&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">doc</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">xls</span><span style="color: #007700">,<br />.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">xlsx&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">xls</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">html&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">html</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">pdf&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">pdf</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;<br /><br /></span><span style="color: #007700">.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">swf</span><span style="color: #007700">,<br />.</span><span style="color: #0000BB">icon</span><span style="color: #007700">-</span><span style="color: #0000BB">flv&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;background</span><span style="color: #007700">-</span><span style="color: #0000BB">image</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">url</span><span style="color: #007700">(../</span><span style="color: #0000BB">images</span><span style="color: #007700">/</span><span style="color: #0000BB">icons</span><span style="color: #007700">/</span><span style="color: #0000BB">swf</span><span style="color: #007700">.</span><span style="color: #0000BB">png</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&#125;&nbsp;</span>
+</span>
+</code></div>
+
+<p>to give a different icon based on the asset&#8217;s file type/extension.</p>
+
+<p>&nbsp;</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>Client Downloads</category>
+			<category>Tutorial</category>
+			
+			<pubDate>Thu, 23 Jun 2011 12:26 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>New types of import available for DataGrab</title>
+			<link>http://brandnewbox.co.uk/news/details/new_types_of_import_available_for_datagrab</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/new_types_of_import_available_for_datagrab#id:1896#date:11:18</guid>
+						<description><![CDATA[<p>DataGrab has been designed to make it easy to add new types of imports for different data formats.</p><p>Several new datatypes have already been developed, and until a better place is found to store them, a forum has been created where they can be downloaded and basic support provided.</p>
+
+<p><a href="http://brandnewbox.co.uk/forums/viewforum/23/">DataGrab Datatype repository</a></p>
+
+<p>Datatypes for Excel, SQL, MovableType and twitter have been added at this stage.</p>
+
+<p>If you have any requests for a new datatype that you think will be useful to yourself or the community, or if your project has need of a bespoke form of import, then please <a href="/v8/contact">get in touch</a>.</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Fri, 21 Jan 2011 11:18 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Using DataGrab to backup your tumblr data</title>
+			<link>http://brandnewbox.co.uk/support/details/using_datagrab_to_backup_your_tumblr_data</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/using_datagrab_to_backup_your_tumblr_data#id:1895#date:21:30</guid>
+						<description><![CDATA[<p>tumblr is a great system for creating a blog. It provides a free, lightweight blogging system, and has a powerful bookmarklet that makes it quick and easy to post new entries.</p>
+
+<p><img src="/images/tumblr_550.png" width="550" height="135" alt="tumblr" /></p>
+
+<p>As <a href="http://www.tumblr.com/">tumblr</a> is a hosted service it means you don’t have to worry about managing the system yourself, but when there are problems you are reliant on tumblr to fix them and to protect you from any data loss.</p>
+
+<p>If you are using <a href="http://www.expressionengine.com/index.php?affiliate=brandnewbox&amp;page=/">ExpressionEngine</a>, then <a href="http://brandnewbox.co.uk/products/details/datagrab">DataGrab</a> can help provide some peace of mind. </p>
+
+<p>All your tumblr data can be accessed using the <a href="http://www.tumblr.com/docs/en/api">tumblr API</a>, and returned as XML, by visiting http://mysite.tumblr.com/api/read (where mysite is replaced by your tumblr site’s name).</p>
+
+<p>Then, using the XML import type in DataGrab, you can import this data into your EE channel. </p>
+
+<p><a href="/images/datagrab_tumblr.png" rel="lightbox"><img src="/images/datagrab_tumblr_550.png" width="550" height="173" alt="Using DataGrab to read from the tumblr API" /></a></p>
+
+<p>You could import all your data into a single channel storing the @type field to differentiate between the different types of posts that tumblr allows.</p>
+
+<p>Alternatively, you could do separate imports for each type using the API’s GET parameter ‘type’ (eg, <code>http://mysite.tumblr.com/api/read?type=photo</code> would access just the photos in your tumblr blog). </p>
+
+<p>In the next part of this article, I’ll introduce a specialised tumblr import type and explain how it might be used.</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Wed, 08 Dec 2010 21:30 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Feed Parser plugin for EE2 released</title>
+			<link>http://brandnewbox.co.uk/news/details/feed_parser_plugin_for_ee2_released</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/feed_parser_plugin_for_ee2_released#id:1894#date:20:45</guid>
+						<description><![CDATA[<p><a href="http://brandnewbox.co.uk/products/details/feed_parser">Feed Parser</a> is a free plugin for ExpressionEngine 2 to fetch and read XML data and display the contents in your templates.</p><p>The plugin is similar to the <a href="http://expressionengine.com/index.php?affiliate=brandnewbox&amp;page=/downloads/details/magpie_rss_atom_parser/">Magpie RSS/ATOM Parser plugin</a> but can handle all XML formats, not just RSS and ATOM, so it is ideal for displaying REST-based API results.</p>
+
+<p>For more details see the <a href="http://brandnewbox.co.uk/products/details/feed_parser">EE Feed Parser</a> product page.</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>Feed Parser</category>
+			
+			<pubDate>Wed, 01 Dec 2010 20:45 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>Installing new data types in DataGrab</title>
+			<link>http://brandnewbox.co.uk/support/details/installing_new_data_types_in_datagrab</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/support/details/installing_new_data_types_in_datagrab#id:1892#date:16:00</guid>
+						<description><![CDATA[<p>DataGrab has the facility to import other kinds of data than default types that it comes bundled with (RSS, CSV and XML), simply by copying a new datatype folder to the correct place.</p><p>Each data type is contained in a folder and contains at least 1 file. For example, a twitter data type could have the following structure.</p>
+
+<p><img src="/images/datagrab_datatype.png" alt="Twitter data type" width="186" height="37" /></p>
+
+<p>Note: the datatype file has the format dt.[folder_name].php. I&#8217;ve prefixed my datatypes with ajw.</p>
+
+<p>To install this datatype, simply copy the folder to your system/expressionengine/third_party/ajw_datagrab/datatypes folder:</p>
+
+<p><img src="/images/datagrab_datatypes.png" alt="Twitter data type" width="228" height="192" /></p>
+
+<p>Now when you go to the DataGrab module you should have an extra option in the &#8220;Create new import&#8221; menu.</p>
+
+<p><img src="/images/datagrab_create.png" alt="Twitter data type" width="375" height="205" /></p>
+
+]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			<category>Reference</category>
+			
+			<pubDate>Thu, 25 Nov 2010 16:00 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab nominated for best module of 2010</title>
+			<link>http://brandnewbox.co.uk/news/details/datagrab_nominated_for_best_module_of_2010</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/datagrab_nominated_for_best_module_of_2010#id:1891#date:14:13</guid>
+						<description><![CDATA[<p><a href="http://brandnewbox.co.uk/products/details/datagrab">DataGrab</a> has been nominated in the &#8220;Module of the Year&#8221; category in devot:ee&#8217;s annual <a href="http://devot-ee.com/news/item/2010-academee-awards/">AcademEE Awards</a>.</p>]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Mon, 22 Nov 2010 14:13 GMT</pubDate>
+		</item>
+		
+		<item>
+			<title>DataGrab now available on devot:ee</title>
+			<link>http://brandnewbox.co.uk/news/details/datagrab_now_available_on_devotee</link>
+			<guid isPermaLink="false">http://brandnewbox.co.uk/news/details/datagrab_now_available_on_devotee#id:1890#date:11:50</guid>
+						<description><![CDATA[<p>For those of you who like to keep their licenses in one place, you can now buy <a href="http://devot-ee.com/add-ons/datagrab/">DataGrab from devot:ee</a>.</p>
+
+]]></description>
+						<category>ExpressionEngine</category>
+			<category>Add&#45;ons</category>
+			<category>DataGrab</category>
+			
+			<pubDate>Fri, 05 Nov 2010 11:50 GMT</pubDate>
+		</item>
+		
+	</channel>
+</rss>

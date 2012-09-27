@@ -1,0 +1,13 @@
+<div class="tag_panel">
+<h4>my favourite tags</h4>
+{exp:tagger:cloud limit="45" backspace="1" min_size="16" max_size="30" prefix="tags"} 
+    <a href="{site_url}index.php/tags/{tags:urlsafe_tagname}/" title="{tags:tag_name}" style="font-size:{tags:size}px">{tags:tag_name}</a>  
+{/exp:tagger:cloud} 
+</div><!--.tag_panel-->
+
+<!--<div class="tag-footer">
+<strong>Tagged:</strong> {exp:tagger:tags entry_id="{entry_id}"}
+ {if tagger:no_tags}<p>No tags where found.</p>{/if} 
+<a href="{site_url}index.php/tags/{tags:urlsafe_tagname}/">{tagger:tag_name}</a> &#124;
+{/exp:tagger:tags} 
+</div>-->

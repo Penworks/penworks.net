@@ -1,0 +1,214 @@
+ <!-- overlay for #link1 element -->
+	 <div class="simple_overlay" id="link1">
+	    <h2>SocialMet</h2>
+	<p>SocialMet was a brave initiative by our university. We are not popular in many peoples eyes. We don't rank highly, we are losing a lot of jobs, we are in the front lines of higher education. Some people may not even view us as a 'proper' university. In fact, we are at the forefront of change and therefore a great guide of what is to come. So, when senior management agreed to open the doors to our community, it was brave. I'm honoured to have imagined it, built it and to look after it.</p>
+
+	<div class="details1">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: BRAVE </p>
+	    <ul>
+		<li>Honest</li>
+		<li>Positive</li>
+		<li>Future thinking</li>
+		<li>Watchful</li>
+	    </ul>
+	</div>
+	<div class="details2">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: HOPEFUL</p>
+	    <ul>
+		<li>Imaginative</li>
+		<li>Trusting</li>
+		<li>Kind</li>
+		<li>Caring</li>
+	    </ul>
+	</div>  
+	<div class="details3">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: FAST FORWARD</p>
+	    <ul>
+		<li>Listening</li>
+		<li>Fair</li>
+		<li>Daring</li>
+		<li>Ahead</li>
+	    </ul>
+	</div>
+		
+	<div class="details4">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: EVERYONE</p>
+	    <ul>
+		<li>Global</li>
+		<li>Local</li>
+		<li>Individual</li>
+		<li>Community</li>
+	    </ul>
+	</div>
+			
+	    <p style="bottom: 10px;">Facebook | socialmet.co.uk | Twitter | LinkedIn | Posterous</p>
+	 </div><!--/.simple_overlay #link1-->
+	 
+	 <!-- overlay for #link2 element -->
+	 <div class="simple_overlay" id="link2">
+	    <h2>Chaning Universities</h2>
+	<p>Some text here about the project</p>
+	<div class="details1">
+	    <h3>rgdfgdfgd gdfgdfg</h3>
+	    <p>gggdfgdfgdfgdfgdfg</p>
+	    <ul>
+		<li>Honest</li>
+		<li>Positive</li>
+		<li>Future thinking</li>
+		<li>Watchful</li>
+	    </ul>
+	</div>
+	<div class="details2">
+	    <h3>ghjghjr6y igkghm fsesef</h3>
+	    <p>gdfgdfgdfgdfgdfg</p>
+	    <ul>
+		<li>Imaginative</li>
+		<li>Trusting</li>
+		<li>Kind</li>
+		<li>Caring</li>
+	    </ul>
+	</div>  
+
+	</div>
+			
+	    <!--<p style="bottom: 10px;">The only way is up...</p>-->
+	 </div><!--/.simple_overlay #link2-->
+	  
+	 
+	 
+	 
+	 <!-- overlay for #link3 element -->
+<div class="simple_overlay" id="link3">
+   
+  <!-- the external content is loaded inside this tag -->
+<!--  <div class="contentWrap"></div>-->
+  
+  
+  
+  <iframe src="{site_url}index.php/pages/inwords" style="height:441px; width: 810px; overflow-y:auto; overflow-x: hidden; border: 1px solid #cece00;" /></iframe>
+  
+</div><!--/.simple_overlay #link4-->
+
+ <!-- overlay for #link3 element -->
+<div class="simple_overlay" id="link4">
+   
+<!--http://software.ussakli.net/projects/photostorss/rss.php?g=   
+http://api.flickr.com/services/feeds/photos_public.gne?id=44124370166@N01&tags=architecture&lang=en-us&format=rss_200 
+http://www.facebook.com/album.php?fbid=10150328549829874&id=737984873&aid=390277
+
+-->
+   {exp:ajw_feedparser 
+    url="http://api.flickr.com/services/feeds/photos_public.gne?id=44124370166@N01&tags=architecture&lang=en-us&format=rss_200"
+    cache_refresh="60"
+    limit="5"
+}
+
+<h3 class="title">{count}/{total_results}: {title}</h3>
+
+<h4>Tags: {media:category}</h4>
+
+{description}
+
+<p style="float:right">{media:thumbnail@url}</p>
+
+<p>Posted by <em>{author}</em> on {dc:date.Taken format='%l, %F %j%S, %Y at %g:%i %A'}</p>
+
+{/exp:ajw_feedparser} 
+
+</div><!--/.simple_overlay #link4-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--end of html -->
+
+
+     <!--   <script type="text/javascript">
+
+	    $(document).ready(function() {
+		//hide the scroll bars for all with js
+		//$(‘html’).css(‘overflow’,'hidden’);
+		//overlay trigger	      
+		$("li[rel]").overlay();
+		});
+		//tooltip stuff
+		//$(".list a[title]").tooltip();
+		$(".list a[title]").tooltip({
+		// move tooltip a little bit to the right etc
+		 offset: [80, 45],/*position: "top left",*/ opacity: 0.7         
+                                                      
+		} );
+	</script>-->
+
+<script>
+  $(function () {
+   $("li[rel]").overlay({mask: '#000'/*, effect: 'apple'*/});
+  });
+  
+  </script>
+
+<!--<script>
+  
+ $ function func1() {
+  //alert("This is the first.");
+  $("li[rel]").overlay({mask: '#000'});
+}
+
+$ function func2() {
+ // alert("This is the second.");
+  $("a[rel]").overlay({mask: '#000',
+	       onBeforeLoad: function () {
+ 
+            // grab wrapper element inside content
+            var wrap = this.getOverlay().find(".contentWrap");
+ 
+            // load the page specified in the trigger
+            wrap.load(this.getTrigger().attr("href"));
+        }
+}
+    });
+});
+
+</script>-->
+
+
+
+<!--<script>
+$(function() {
+
+    // if the function argument is given to overlay,
+    // it is assumed to be the onBeforeLoad event listener
+    $("a[rel]").overlay({
+
+        mask: '#000',
+       // effect: 'apple',
+
+        onBeforeLoad: function() {
+
+            // grab wrapper element inside content
+            var wrap = this.getOverlay().find(".contentWrap");
+
+            // load the page specified in the trigger
+            wrap.load(this.getTrigger().attr("href"));
+        }
+
+    });
+});
+</script>-->
+
+
+
+
+	 

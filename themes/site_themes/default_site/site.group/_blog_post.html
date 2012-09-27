@@ -1,0 +1,41 @@
+<div class="post_entry">
+
+
+{exp:channel:entries channel="blog" disable="member_data|trackbacks" limit="1"}
+
+<h2>{title}</h2>
+<p class="pub_date">Published: {entry_date format="%D, %F %d, %Y; %G:%i:%s %a"} | Author: {author}</p>
+<!--[if lte IE 8]> 
+{if img_upload}<img src="{img_upload}" alt="{title}" title="{title}" width="300"/>
+ <br />{/if}<![endif]-->
+<!--[if lte IE 8]><![IGNORE[-->{if img_upload}
+<img src="{img_upload}" alt="{title}" title="{title}" height="{height}" width="{width}"/>
+{/if}<![IGNORE[]]><![endif]-->
+
+{embed="embeds/_social_media_icons"}
+
+{if embed_item}
+{embed_item}
+{/if}
+
+{exp:word_limit total="200"}{post_body}{/exp:word_limit}
+
+{embed="embeds/_list_items"}
+
+
+<!--<br /><br/>
+<hr>-->
+
+
+<div class="tag-footer">
+
+<strong>Tagged:</strong> {exp:tagger:tags entry_id="{entry_id}"  backspace="7"}
+ {if tagger:no_tags}<p>No tags where found.</p>{/if} 
+<a href="{site_url}index.php/tags/{tagger:urlsafe_tagname}">{tagger:tag_name}</a> &#124;
+{/exp:tagger:tags} 
+</div>
+
+{/exp:channel:entries}
+
+
+</div><!--/.post_entry-->

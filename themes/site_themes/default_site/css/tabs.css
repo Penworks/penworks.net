@@ -1,0 +1,143 @@
+@charset "windows-1252";
+		
+/* root element for tabs  */
+ul.css-tabs {  
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	
+	width:442px; 	
+}
+
+/* single tab */
+ul.css-tabs li {  
+	float:left;	 
+	padding:0; 
+	margin:0;  
+	list-style-type:none;	
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a { 
+	float:left;
+	font-size:13px;
+	display:block;
+	padding:5px 30px;	
+	text-decoration:none;
+	border:1px solid #666;	
+	border-bottom:0px;
+	height:18px;
+	background-color:#efefef;
+	color:#777;
+	margin-right:2px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright:4px;
+	position:relative;
+	top:1px;	
+}
+
+ul.css-tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+	
+/* selected tab */
+ul.css-tabs a.current {
+	background-color:#ddd;
+	border-bottom:2px solid #ddd;	
+	color:#000;	
+	cursor:default;
+}
+
+	
+/* tab pane */
+.css-panes div {
+	display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	padding:15px 20px; 
+	width:400px;
+	background-color:#ddd;	
+}
+
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+  outline: 0; /*fix for FF3.6 in win 7*/
+}
+
+body {
+	/*padding:50px 80px;*/
+	font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",sans-serif,verdana;
+}
+
+.panel {
+   width: 300px;
+
+} 
+
+
+
+
+/*accordion used as class */
+
+	/* root element for each accordion  */
+	
+	
+.css-panes	div.accordion {
+	
+		/* some decorations for the accordion root element */
+		background:#333;
+		width: 370px;
+		border:1px solid #333;
+		/* IE6 cannot handle PNG24 backgrounds. use a solid color instead */
+		-background:#666;
+		display:block;
+	}
+	
+	/* accordion header */
+.css-panes	div.accordion h2 {
+		background:#ccc;
+		margin:0;
+		padding:5px 5px;
+		font-size:14px;
+		font-weight:normal;
+		border:1px solid #fff;
+		border-bottom:1px solid #ddd;
+		cursor:pointer;
+	}
+	
+	/* currently active header */
+.css-panes	div.accordion h2.current {
+		cursor:default;
+		background-color:#FF00CC;color: #fff;
+	}
+	
+.css-panes	div.accordion h2:hover {
+		cursor:default;
+		background-color:#FF00CC;color: #fff;
+	}
+	
+	/* accordion pane */
+.css-panes	div.accordion div.pane {
+		border:1px solid #fff;
+		border-width:0 2px;
+		display:none;
+		/*height:180px;*/
+		padding:15px;
+		color:#fff;
+		font-size:12px;
+		width: 336px;
+	}
+	
+	/* a title inside pane */
+.css-panes	div.accordion div.pane h3 {
+		font-weight:normal;
+		margin:0 0 -5px 0;
+		font-size:16px;
+		color:#999;
+	}

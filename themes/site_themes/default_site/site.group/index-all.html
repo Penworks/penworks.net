@@ -1,0 +1,182 @@
+    {embed="embeds/_htmlheader" my_page_title="home"}
+    
+
+    <body>
+
+ <div>
+            <span class="reference">
+                © penworks.net ~ we like this stuff | <a href="{site_url}index.php/site/index_h">validate me baby</a>
+            </span>
+        </div>
+             <div class="section black" id="section1">
+            <h2>penworks.net|the hello part</h2>
+            <p>
+                "Bringing explosive daring and the shock of the new to an allegedly <a href="http://en.wikipedia.org/wiki/Petrifaction">petrified</a> sector"
+            </p>
+            <ul class="nav">
+                <li>1</li>
+                <li><a href="#section2">2</a></li>
+                <li><a href="#section3">3</a></li>
+		<li><a href="#section4">4</a></li>
+            </ul>
+        </div><!--/#section1-->
+	     
+	     
+        <div class="section white" id="section2">
+	    
+            <h2>penworks.net|the about part</h2>
+            <p>
+                ‘Shy, not shy, a mix of life experience, sass, charm and annoying brutal truth'
+
+            </p>
+            <ul class="nav">
+                <li><a href="#section1">1</a></li>
+                <li>2</li>
+                <li><a href="#section3">3</a></li>
+		<li><a href="#section4">4</a></li>
+            </ul>
+	    
+	    
+	<div class="about">
+	    	<p>stuff I know, link to my resume, link to video blog</p>
+	    <ul>
+		<li>the digital world: A fair bit of it, in some detail. I 'do', and 'teach'.</li>
+		<li>the real world: a lot. maybe nothing.</li>
+		<li> the future world: maybe a little, if I'm lucky.</li>
+		<li>stuff I want to do next: help change the system, especially HE, make it real, meaningful, actually worth the money it's going to cost.</li>
+		<li>stuff to signify some of the above: MSc, PGCert</li>
+	    </ul>
+
+	</div>
+
+        </div><!--/#section2-->
+	
+	
+        <div class="section black" id="section3">
+            <h2>penworks.net|the interesting part</h2>
+            <p>
+                ‘It's all about what you know, who you know, how you know them and why they might want to know you'
+
+            </p>
+
+
+            <ul class="nav">
+                <li><a href="#section1">1</a></li>
+                <li><a href="#section2">2</a></li>
+                <li>3</li>
+		<li><a href="#section4">4</a></li>
+            </ul>  
+	    
+	<div class="projects">
+	    <p>	Some of my current projects, fun stuff, work stuff, ideas. It's a little art, thought, work, attitude. Listen hard and you can hear the grey cells interacting.
+	    </p>
+	    <ul>
+		<li rel="#link1"><a href="#">SocialMet</a></li> 
+		<li rel="#link2"><a href="#">The Word Player</a></li> 
+		<li rel="#link3"><a href="#">Changing Universities</a></li>
+		<li rel="#link4"><a href="#">Visual World</a></li> 
+	    </ul>
+	</div>
+
+        </div><!--/#section3-->
+	
+	<div class="section white" id="section4">
+            <h2>penworks.net|the archive part</h2>
+            <p>
+                ‘And the old man of the sea said: what about another one for the road?'
+
+            </p>
+            <ul class="nav">
+                <li><a href="#section1">1</a></li>
+                <li><a href="#section2">2</a></li>
+		<li><a href="#section3">3</a></li>
+                <li>4</li>
+            </ul>
+        </div><!--/#section4-->
+	 
+	 
+	 <div class="simple_overlay" id="link1">
+	    <h2>SocialMet</h2>
+	<p>SocialMet was a brave initiative by our university. We are not popular in many peoples eyes. We don't rank highly, we are losing a lot of jobs, we are in the front lines of higher education. Some people may not even view us as a 'proper' university. In fact, we are at the forefront of change and therefore a great guide of what is to come. So, when senior management agreed to open the doors to our community, it was brave. I'm honoured to have imagined it, built it and to look after it.</p>
+
+	<div class="details1">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: BRAVE 
+	    <ul>
+		<li>Honest</li>
+		<li>Positive</li>
+		<li>Future thinking</li>
+		<li>Watchful</li>
+	    </ul>
+	</div>
+	<div class="details2">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: HOPEFUL
+	    <ul>
+		<li>Imaginative</li>
+		<li>Trusting</li>
+		<li>Kind</li>
+		<li>Caring</li>
+	    </ul>
+	</div>  
+	<div class="details3">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: FAST FORWARD
+	    <ul>
+		<li>Listening</li>
+		<li>Fair</li>
+		<li>Daring</li>
+		<li>Ahead</li>
+	    </ul>
+	</div>
+		
+	<div class="details4">
+	    <h3>SocialMet</h3>
+	    <p>SocialMet is: EVERYONE
+	    <ul>
+		<li>Global</li>
+		<li>Local</li>
+		<li>Individual</li>
+		<li>Community</li>
+	    </ul>
+	</div>
+			
+	    <p style="bottom: 10px;">Facebook | socialmet.co.uk | Twitter | LinkedIn | Posterous</p>
+	 </div><!--/.simple_overlay #link1-->
+	 
+	 
+	 
+       
+       <script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                       scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+		    
+                    event.preventDefault();
+                });
+		});		  	    
+        </script>
+       
+        <script type="text/javascript">
+
+	    $(document).ready(function() {
+		//hide the scroll bars for all with js
+		//$(‘html’).css(‘overflow’,'hidden’);
+		//overlay trigger	      
+		$("li[rel]").overlay();
+		});
+		//tooltip stuff
+		//$(".list a[title]").tooltip();
+		$(".list a[title]").tooltip({
+		// move tooltip a little bit to the right etc
+		 offset: [80, 45],/*position: "top left",*/ opacity: 0.7         
+                                                      
+		} );
+	</script>
+
+    </body>
+</html>

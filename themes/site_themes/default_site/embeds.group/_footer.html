@@ -1,0 +1,69 @@
+<style>
+.slidingDiv {
+    position:fixed;
+    left:59px;
+    bottom:42px;
+    height:80px;
+    width: 200px;
+    background-color: #e311ce;
+    color: #fff;
+    font-size: 14px;
+    padding:10px 10px 10px 20px;
+    /*margin-bottom: 10px;*/
+    border:2px dotted #fed8fa;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+-webkit-border-bottom-left-radius: 0;
+-moz-border-radius-bottomleft: 0;
+border-bottom-left-radius: 0;
+z-index: 10;
+}
+ 
+.show_hide {
+    display:none;
+}
+
+a.show_hide {
+     text-decoration: none;      
+}
+</style>
+
+ <div>
+           
+                      
+                <a href="#" class="show_hide">      <span class="reference">
+              
+               
+          <div class="slidingDiv">      <!-- <div class="left_panel">-->
+          
+	 Penworks.net is home to Pen Lister: Lecturer, Web & Social Media Dev/Design, Elearning, word player, songsmith, ambient image maker.
+	<!-- </div>-->
+                </div>
+               
+               
+               
+               
+            </span></a>
+        </div>
+ 
+ <!-- all content © penworks.net ~ we like this stuff | <a href="{site_url}index.php/site/index_h">validate me baby</a>-->
+ 
+ <script type="text/javascript">
+
+ $(document).ready(function(){
+  
+        $(".slidingDiv").hide();
+        $(".show_hide").show();
+ 
+    $('.show_hide').hover(function(){
+    $(".slidingDiv").slideToggle();
+    });
+ 
+});
+
+//end script
+
+</script>
+ 
+ 
